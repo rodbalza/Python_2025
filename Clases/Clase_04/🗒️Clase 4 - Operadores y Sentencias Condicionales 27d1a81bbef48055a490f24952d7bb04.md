@@ -221,6 +221,8 @@ es_mayor = not (edad < 18)
 print(f"¿Es mayor de edad? {es_mayor}")
 ```
 
+Ejercicio: Resolver ejercicio anterior utilizando input()
+
 ### Ejemplo 2: Sistema de aprobación
 
 ```python
@@ -245,7 +247,7 @@ recuperacion = (not aprueba_teoria) or (not aprueba_practica)
 print(f"¿Necesita recuperación? {recuperacion}")
 ```
 
-### Ejemplo 3: Validación de contraseña simple
+### Ejemplo 3 (Ignorar): Validación de contraseña simple
 
 ```python
 # Verificar si una contraseña cumple requisitos básicos
@@ -416,6 +418,8 @@ else:
     print("Puede votar: No")
 ```
 
+Ejercicio: Ajustar código para que la edad sea leída por rangos. 
+
 ### Ejemplo 3: Calculadora de descuento
 
 ```python
@@ -424,12 +428,15 @@ monto_compra = 75
 
 if monto_compra >= 100:
     descuento = 15  # 15%
+    print("Entró al primer if")
+    
 elif monto_compra >= 50:
     descuento = 10  # 10%
 elif monto_compra >= 25:
     descuento = 5   # 5%
 else:
     descuento = 0   # Sin descuento
+    print("No tiene descuento")
 
 monto_descuento = monto_compra * (descuento / 100)
 total_pagar = monto_compra - monto_descuento
@@ -504,17 +511,17 @@ intentos = 2
 
 # Credenciales correctas
 usuario_correcto = usuario == "admin"
-password_correcta = password == "1234"
+password_correcto = password == "1234"
 intentos_restantes = 3 - intentos
 
 # Verificar acceso
-if usuario_correcto and password_correcta:
+if usuario_correcto and password_correcto:
     print("Acceso permitido")
     print("Bienvenido al sistema")
 elif not usuario_correcto:
     print("Usuario incorrecto")
     print(f"Intentos restantes: {intentos_restantes}")
-elif not password_correcta:
+elif not password_correcto:
     print("Contraseña incorrecta")
     print(f"Intentos restantes: {intentos_restantes}")
     
@@ -647,7 +654,7 @@ Aumento salarial: 15%
 
 ### Ejercicio 3: Sistema de alerta de salud
 
-**Enunciado:** Monitorea signos vitales: frecuencia_cardiaca = 105, presion_sistolica = 135, temperatura = 37.8, oxigeno = 94. Normal: FC 60-100, presión <120, temp 36-37.5, O2 >95. Si 2 o más valores anormales = “Alerta Amarilla”. Si FC > 120 O presión > 140 O O2 < 90 = “Alerta Roja”. Si todos normales = “Estado óptimo”.
+**Enunciado:** Monitorea signos vitales: frecuencia cardíaca = 105, presion_sistolica = 135, temperatura = 37.8, oxigeno = 94. Normal: FC 60-100, presión <120, temp 36-37.5, O2 >95. Si 2 o más valores anormales = “Alerta Amarilla”. Si FC > 120 O presión > 140 O O2 < 90 = “Alerta Roja”. Si todos normales = “Estado óptimo”.
 
 **Salida esperada:**
 
