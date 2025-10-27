@@ -1,19 +1,21 @@
 import saludos
 
 saludos.saludar()
+saludos.Saludo()
 
 
 # from saludos import saludar
 # saludar()
 
+# from saludos import Saludo
+# Saludo()
+
+# from saludos import saludar, Saludo
+# saludar()
+# Saludo()
+
 # from saludos import *
-# saludar
+# saludar()
+# Saludo()
 
-# Dicho esto, a parte de funciones también podemos reutilizar clases:
 
-'''
-class Saludo():
-    def __init__(self):
-        print("Hola, te estoy saludando desde el __init__ " \
-                "de la clase Saludo")
-'''
