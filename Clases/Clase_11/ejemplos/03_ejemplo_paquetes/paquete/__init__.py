@@ -1,0 +1,1 @@
+print("Ejecutando paquetes __init__.py")
